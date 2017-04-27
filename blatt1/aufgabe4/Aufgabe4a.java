@@ -2,7 +2,7 @@ package blatt1.aufgabe4;
 
 public class Aufgabe4a {
 
-	private static final int e = 2;
+	private static final int e = 10;
 	
 	public static void main(String[] args) {
 		System.out.println("Ergebnis: " + fakulty(e));
