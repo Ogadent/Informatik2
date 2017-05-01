@@ -5,7 +5,7 @@ a)
 	4. x += 2;
 	
 b)
-	1. Die maximale Größe die ein int in Java annehmen kann
+	1. Es handelt sich um eine Konstante die die maximale Größe eines ints in Java innehält
 	2. Character.MIN_VALUE
 	3. Ja
 	4. Nein
@@ -15,5 +15,5 @@ b)
 	8. StringBuilder#append
 
 c)
-	1. java -jar a -x -o
+	1. java a -x -o
 	2. javac a.java
