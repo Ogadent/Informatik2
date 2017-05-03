@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Aufgabe3c {
 
-	public static void main(String... args) {
+	public static void main(String[] args) {
 		if (args.length == 0) {
 			System.err.println("Fehler");
 			return;
