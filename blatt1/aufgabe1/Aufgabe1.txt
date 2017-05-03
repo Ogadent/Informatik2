@@ -9,10 +9,10 @@ b)
 	2. Character.MIN_VALUE
 	3. Ja
 	4. Nein
-	5. Character.isDigit()
+	5. public static boolean isDigit(char ch)
 	6. Die Funktion versucht aus der angegebenen Zeichenkette eine Zahl vom Typ double zu bilden. Ist dies erfolgreich wird die Zahl zurückgegeben, falls ein illegales Zeichen auftaucht wird eine NumberFormatException geworfen
 	7. Math.sqrt(1.9)
-	8. StringBuilder#append
+	8. public StringBuilder append(CharSequence s)
 
 c)
 	1. java a -x -o
