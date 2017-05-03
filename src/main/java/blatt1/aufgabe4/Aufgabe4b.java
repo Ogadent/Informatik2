@@ -4,7 +4,7 @@ public class Aufgabe4b {
 
 	private static final int NUM = 99;
 
-	public static void main(String... args) {
+	public static void main(String[] args) {
 		System.out.println("Ergebnis: " + binaryCount(NUM));
 	}
 
