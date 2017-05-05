@@ -1,0 +1,5 @@
+a)
+	Die Dateikomponenten sind privat, die checkRadius Methode überprüft ob radius > 0 ist
+	
+b)
+	Das Attribut isbn10 ist privat und bei ungültigen Eingaben wird eine IllegalArgumentException geworfen
