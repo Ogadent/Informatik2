@@ -6,7 +6,7 @@ public class Square {
 	private int width;
 
 	public Square(final int height, final int width) {
-		setHeight(height  );
+		setHeight(height);
 		setWidth(width);
 	}
 	
