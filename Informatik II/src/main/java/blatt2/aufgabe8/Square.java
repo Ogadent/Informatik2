@@ -2,37 +2,37 @@ package blatt2.aufgabe8;
 
 public class Square {
 
-	private int height;
-	private int width;
+	private double height;
+	private double width;
 
-	public Square(final int height, final int width) {
+	public Square(final double height, final double width) {
 		setHeight(height);
 		setWidth(width);
 	}
 	
-	public int getHeight() {
+	public double getHeight() {
 		return height;
 	}
 
-	public void setHeight(final int height) {
+	public void setHeight(final double height) {
 		if (!checkPositive(height)) {
 			throw new IllegalArgumentException("height (" + width + ") must be > 0");
 		}
 		this.height = height;
 	}
 
-	public int getWidth() {
+	public double getWidth() {
 		return width;
 	}
 
-	public void setWidth(final int width) {
+	public void setWidth(final double width) {
 		if (!checkPositive(width)) {
 			throw new IllegalArgumentException("width (" + width + ") must be > 0");
 		}
 		this.width = width;
 	}
 
-	public boolean checkPositive(final int num) {
+	public boolean checkPositive(final double num) {
 		return num > 0;
 	}
 
@@ -45,8 +45,11 @@ public class Square {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + height;
-		result = prime * result + width;
+		long temp;
+		temp = Double.doubleToLongBits(height);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(width);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
 		return result;
 	}
 
@@ -62,10 +65,10 @@ public class Square {
 			return false;
 		}
 		Square other = (Square) obj;
-		if (height != other.height) {
+		if (Double.doubleToLongBits(height) != Double.doubleToLongBits(other.height)) {
 			return false;
 		}
-		if (width != other.width) {
+		if (Double.doubleToLongBits(width) != Double.doubleToLongBits(other.width)) {
 			return false;
 		}
 		return true;
