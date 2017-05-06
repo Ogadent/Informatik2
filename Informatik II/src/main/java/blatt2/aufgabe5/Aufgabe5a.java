@@ -8,7 +8,7 @@ public class Aufgabe5a {
 			return;
 		}
 		final String s = args[0];
-		System.out.println("Das erste Zeichen von " + '"' + s + '"' + " ist " + (Character.isUpperCase(s.charAt(0)) ? "" : "k") + "ein Groﬂbuchstabe.");
-		System.out.println('"' + s + '"' + " ist " + (s.length() > 10 ? "l‰nger" : "maximal") + " 10 Zeichen lang.");
+		System.out.println("Das erste Zeichen von " + '"' + s + '"' + " ist " + (Character.isUpperCase(s.charAt(0)) ? "" : "k") + "ein Gro√übuchstabe.");
+		System.out.println('"' + s + '"' + " ist " + (s.length() > 10 ? "l√§nger als" : "maximal") + " 10 Zeichen lang.");
 	}
 }

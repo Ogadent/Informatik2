@@ -1,5 +1,5 @@
 a)
-	Die Dateikomponenten sind privat, die checkRadius Methode überprüft ob radius > 0 ist
+	Die Dateikomponenten sind privat, die checkRadius Methode  Ã¼berprÃ¼ft ob der radius > 0 ist
 	
 b)
-	Das Attribut isbn10 ist privat und bei ungültigen Eingaben wird eine IllegalArgumentException geworfen
+	Das Attribut isbn10 ist privat und bei ungÃ¼ltigen Eingaben wird eine IllegalArgumentException geworfen
