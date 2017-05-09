@@ -33,7 +33,7 @@ public class Student {
 	}
 	
 	private static boolean checkMatr(final String matnr) {
-		return matnr.matches("[0-9]{10}");
+		return matnr.matches("\\d{10}");
 	}
 
 	public void setMatnr(final String matrikelNumber) {
