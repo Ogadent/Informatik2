@@ -3,7 +3,6 @@ package blatt2.aufgabe5;
 public class Aufgabe5a {
 
 	public static void main(String[] args) {
-		args = new String[]{"Test"};
 		if (args.length != 1) {
 			return;
 		}
