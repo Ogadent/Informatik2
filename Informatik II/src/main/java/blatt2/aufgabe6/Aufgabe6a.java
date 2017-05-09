@@ -6,9 +6,13 @@ public class Aufgabe6a {
 		if (args.length != 1) {
 			return;
 		}
-		final int arg = Integer.parseInt(args[0]);
-		final Integer n = Integer.valueOf(arg);
-		System.out.println(n);
-		System.out.println(Integer.MAX_VALUE);
+		try {
+			final int arg = Integer.parseInt(args[0]);
+			final Integer n = arg;
+			System.out.println(n);
+			System.out.println(Integer.MAX_VALUE);
+		} catch (NumberFormatException e) {
+			System.out.println(e.getMessage());	
+		}
 	}
 }
