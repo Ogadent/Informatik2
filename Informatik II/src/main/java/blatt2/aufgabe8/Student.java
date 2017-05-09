@@ -5,7 +5,7 @@ public class Student {
 	private String matnr;
 	private String name;
 	
-	public Student(String name, String matnr) {
+	public Student(final String name, final String matnr) {
 		setName(name);
 		setMatnr(matnr);
 	}
@@ -18,7 +18,7 @@ public class Student {
 		return this.matnr;
 	}
 	
-	private static boolean checkName(String name) {
+	private static boolean checkName(final String name) {
 		return (name.length() <= 20);
 	}
 	
