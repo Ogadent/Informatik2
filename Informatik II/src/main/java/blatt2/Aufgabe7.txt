@@ -1,5 +1,5 @@
 a)
-	Die Dateikomponenten sind privat, die checkRadius Methode  überprüft ob der radius > 0 ist
+	Die Klasse Article hat die Attribute name, discount und price. Die zugehörigen Datenstrukturinvarianten sind: 
 	
 b)
 	Das Attribut isbn10 ist privat und bei ungültigen Eingaben wird eine IllegalArgumentException geworfen
