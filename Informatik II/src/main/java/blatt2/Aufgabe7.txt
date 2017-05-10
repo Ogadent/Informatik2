@@ -1,5 +1,5 @@
 a)
-	Die Klasse Article hat die Attribute name, discount und price. Die zugehörigen Datenstrukturinvarianten sind: checkName, checkDiscount und checkPrice
+	Die Klasse Article hat die Attribute String name, double discount und double price. Name hat keine Invariante, price muss immer größer als 0 sein und discount muss größer gleich 0 und kleiner als 10 sein.
 	
 b)
-	Das Attribut isbn10 ist privat und bei ungültigen Eingaben wird eine IllegalArgumentException geworfen
+	Das Attribut 
