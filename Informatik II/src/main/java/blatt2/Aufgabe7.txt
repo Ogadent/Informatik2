@@ -2,4 +2,4 @@ a)
 	Die Klasse Article hat die Attribute String name, double discount und double price. Name hat keine Invariante, price muss immer größer als 0 sein und discount muss größer gleich 0 und kleiner als 10 sein.
 	
 b)
-	Das Attribut isbn10 erfüllt folgende Datenstrukturinvarianten: Der String muss genau 10 Zeichen lang sein, die ersten 9 Zeichen müssen Ziffern sein und das letzte Zeichen muss gleich der Summe der vorherigen Ziffern mal ihrer Position in der Zeichenkette sein (angefangen bei 1). Das Ergebnis wird dann modulo 11 genommen und muss dem letzten Zeichen gelten, für eine 10 wird ein X erwartet.
+	Das Attribut isbn10 erfüllt folgende Datenstrukturinvarianten: Der String muss genau 10 Zeichen lang sein, die ersten 9 Zeichen müssen Ziffern sein und das letzte Zeichen muss sich mit der Prüfsumme errechnen lassen.
