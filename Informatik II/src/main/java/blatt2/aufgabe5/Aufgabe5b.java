@@ -8,6 +8,10 @@ public class Aufgabe5b {
 		}
 		final StringBuilder s = new StringBuilder(args[0]);
 		System.out.println(s.append(s.capacity()));
-		System.out.println(s.deleteCharAt(5));
+		try {
+			System.out.println(s.deleteCharAt(5));
+		} catch (StringIndexOutOfBoundsException e) {
+			System.out.println(e.getMessage());	
+		}
 	}
 }
