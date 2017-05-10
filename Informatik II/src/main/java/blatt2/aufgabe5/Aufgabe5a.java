@@ -10,7 +10,7 @@ public class Aufgabe5a {
 		try {
 			System.out.println("Das erste Zeichen von " + '"' + s + '"' + " ist " + (Character.isUpperCase(s.charAt(0)) ? "" : "k") + "ein Großbuchstabe.");
 			System.out.println('"' + s + '"' + " ist " + (s.length() > 10 ? "länger als" : "maximal") + " 10 Zeichen lang.");
-		} catch (StringIndexOutOfBoundsException e) {
+		} catch (IndexOutOfBoundsException e) {
 			System.out.println(e.getMessage());	
 		}
 	}
