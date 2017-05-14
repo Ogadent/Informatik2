@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>350</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>+ Book
+--
+- year :Integer [0..1]{year &gt; 1500}
+- isbn10 :String {|isbn10|=10, isbn10 is unique}
+--
++ Book(year: Integer[], isbn10: String){IllegalArgumentException}
++ getYears(): Integer[]
++ getIsbn10(): String
++ setYears(year: Integer[]){IllegalArgumentException}
++ setIsbn10(isbn10: String){IllegalArgumentException}
+_- checkYears(year: Integer[]): Boolean_
+_- checkIsbn10(isbn10: String): Boolean_</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
