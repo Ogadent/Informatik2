@@ -6,18 +6,16 @@ public class Aufgabe9a {
 		if (args.length % 3 != 0) {
 			return;
 		}
-		int circleCount = 0;
 		for (int i = 0; i < args.length; i++) {
 			try {
 				final int x = Integer.parseInt(args[i++]);
 				final int y = Integer.parseInt(args[i++]);
 				final int r = Integer.parseInt(args[i]);
 				new Circle(r, new Point(x, y));
-				circleCount++;
 			} catch (IllegalArgumentException e) {
 				System.out.println(e.getMessage());
 			}
 		}
-		System.out.println(circleCount);
+		System.out.println(Circle.getCount());
 	}
 }
