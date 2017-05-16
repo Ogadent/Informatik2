@@ -9,9 +9,9 @@ public class Aufgabe9a {
 		int circleCount = 0;
 		for (int i = 0; i < args.length; i++) {
 			try {
-				final int x = Integer.parseInt(args[i]);
+				final int x = Integer.parseInt(args[i++]);
 				final int y = Integer.parseInt(args[i++]);
-				final int r = Integer.parseInt(args[i++]);
+				final int r = Integer.parseInt(args[i]);
 				new Circle(r, new Point(x, y));
 				circleCount++;
 			} catch (IllegalArgumentException e) {
