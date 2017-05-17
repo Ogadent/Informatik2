@@ -11,7 +11,8 @@ public class Aufgabe9a {
 				final int x = Integer.parseInt(args[i++]);
 				final int y = Integer.parseInt(args[i++]);
 				final int r = Integer.parseInt(args[i]);
-				new Circle(r, new Point(x, y));
+				final Point p = new Point(x, y);
+				new Circle(r, p);
 			} catch (IllegalArgumentException e) {
 				System.out.println(e.getMessage());
 			}
