@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>460</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>+ Matrice
+--
+- rowDimension: Integer {rowDivision &gt; 0}
+- cloumnDivision: Integer {columnDivision &gt; 0}
+- values: Integer [n][m] {n=rowDimension, m=columnDimension}
+--
++ Matrice(rows: Integer, columns: Integer) {IllegalArgumentException}
++ getRowAmount(): Integer
++ getColumnAmount(): Integer
++ get(x: Integer, y: Integer) {IndexOutOfBoundsException}
++ set(x: Integer, y: Integer, value: Integer) {IndexOutOfBoundsException}
++ add(matrice: Matrice) {IllegalArgumentException}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
