@@ -6,14 +6,14 @@
     <coordinates>
       <x>20</x>
       <y>20</y>
-      <w>310</w>
+      <w>390</w>
       <h>190</h>
     </coordinates>
     <panel_attributes>+ Employee
 --
 - language: String[0..*]
 --
-+ setLanguage(language: String[])
++ setLanguage(language: String[]) {IllegalArgumentException}
 + getLanguage(): String[]
 _- checkLanguage(language: String[]): Boolean_</panel_attributes>
     <additional_attributes/>
