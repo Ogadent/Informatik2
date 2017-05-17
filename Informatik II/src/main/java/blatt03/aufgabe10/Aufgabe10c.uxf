@@ -11,7 +11,7 @@
     </coordinates>
     <panel_attributes>+ Article
 --
-- number: Long {number is unique}
+- number: UnlimitedNatural {number is unique}
 - netPrice: Real {netPrice &gt;= 0}
 _- tax: Real {tax &gt;= 0}_</panel_attributes>
     <additional_attributes/>
