@@ -32,7 +32,7 @@ public class Student {
 		return email.get(p);
 	}
 	
-	public boolean checkEmail(final String email) {
+	private static boolean checkEmail(final String email) {
 		return email.matches("\\b@\\b");
 	}
 }
