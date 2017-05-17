@@ -13,7 +13,9 @@ public class Aufgabe9b {
 			return;
 		}
 		contact.setBirthday(args[1]);
-		Arrays.stream(args).forEach(contact::addTelephone);
+		for (int i = 2; i < args.length; i++) {
+			contact.addTelephone(args[i]);
+		}
 		contact.deleteTelephone("0112");
 		contact.getTelephone().forEach(System.out::println);
 	}
