@@ -10,7 +10,7 @@
       <h>190</h>
     </coordinates>
     <panel_attributes>&lt;&lt;enumeration&gt;&gt;
-PhonenumberType
++ PhonenumberType
 --
 WORK
 PRIVATE</panel_attributes>
@@ -21,13 +21,13 @@ PRIVATE</panel_attributes>
     <coordinates>
       <x>410</x>
       <y>270</y>
-      <w>310</w>
+      <w>260</w>
       <h>190</h>
     </coordinates>
-    <panel_attributes>Phonenumber
+    <panel_attributes>+ Phonenumber
 --
 - phonenumberType: PhonenumberType
-- number: char[4..*]</panel_attributes>
+- number: String {|number| &gt;= 4}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -35,14 +35,14 @@ PRIVATE</panel_attributes>
     <coordinates>
       <x>130</x>
       <y>500</y>
-      <w>240</w>
+      <w>200</w>
       <h>190</h>
     </coordinates>
-    <panel_attributes>Contact
+    <panel_attributes>+ Contact
 --
-- name: char[2..*]
+- name: String {|name| &gt;= 2}
 - numbers: Phonenumber[0..*]
-- favourite: boolean = false</panel_attributes>
+- favourite: Boolean = false</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

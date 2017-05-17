@@ -33,7 +33,7 @@
       <h>190</h>
     </coordinates>
     <panel_attributes>&lt;&lt;enumeration&gt;&gt;
-MessageType
++ MessageType
 --
 SYNCHRONOUS
 ASYNCHRONOUS
@@ -43,15 +43,15 @@ CREATE</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>470</x>
+      <x>390</x>
       <y>240</y>
-      <w>210</w>
+      <w>350</w>
       <h>190</h>
     </coordinates>
-    <panel_attributes>Message
+    <panel_attributes>+ Message
 --
 - messageType: MessageType
-- message: char[1..3]</panel_attributes>
+- message: String {|message| &gt; 0 ^ |message| &lt;= 20}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
