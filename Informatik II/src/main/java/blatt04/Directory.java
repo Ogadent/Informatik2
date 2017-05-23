@@ -12,10 +12,6 @@ public class Directory extends AbstractFile {
 
 	@Override
 	public int getSize() {
-		int size = 0;
-		for (AbstractFile f : element) {
-			size += f.getSize();
-		}
-		return size;
+		return element.stream().mapToInt(AbstractFile::getSize).sum();
 	}
 }
