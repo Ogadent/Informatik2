@@ -6,7 +6,7 @@
  * 
  */
 
-package blatt04.aufgabe15b;
+package blatt04.aufgabe15a;
 
 /**
  * Punkt mit jeweils nicht-negativer ganzzahliger x- und y-Koordinate
