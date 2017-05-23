@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
+      <y>80</y>
+      <w>460</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>+Klasse
+--
+-sichtbarkeit: Sichtbarkeit
+--
++setSichtbarkeit(in sichtbarkeit: Sichtbarkeit) {IllegalArgumentException}
++getSichtbarkeit(): Sichtbarkeit
++equals(in obj: Object): Boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>110</y>
+      <w>340</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=[0..1]
+{azyklisch}</panel_attributes>
+    <additional_attributes>150.0;10.0;260.0;10.0;260.0;100.0;10.0;100.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>640</x>
+      <y>100</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>- oberklasse
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>850</x>
+      <y>80</y>
+      <w>110</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
++ Sichtbarkeit</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
