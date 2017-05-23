@@ -1,4 +1,4 @@
-package blatt04;
+package blatt04.aufgabe15d;
 
 import java.util.List;
 
