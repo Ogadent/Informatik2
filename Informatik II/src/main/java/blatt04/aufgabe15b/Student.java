@@ -13,7 +13,7 @@ public class Student {
 	}
 	
 	public void linkStudiengang(Studiengang s) {
-		if (!s.isWiederholungsfrei()) {
+		if (!s.wiederholungsfrei()) {
 			throw new IllegalArgumentException("s ist nicht wiederholungsfrei");
 		}
 		studiengang.add(s);
