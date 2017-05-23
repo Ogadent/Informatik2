@@ -8,6 +8,7 @@ public class Directory extends AbstractFile {
 	
 	public Directory(String name) {
 		super(name);
+		element = new ArrayList<>();
 	}
 
 	@Override
