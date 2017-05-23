@@ -7,7 +7,7 @@
       <x>170</x>
       <y>80</y>
       <w>460</w>
-      <h>100</h>
+      <h>160</h>
     </coordinates>
     <panel_attributes>+Klasse
 --
@@ -15,7 +15,11 @@
 --
 +setSichtbarkeit(in sichtbarkeit: Sichtbarkeit) {IllegalArgumentException}
 +getSichtbarkeit(): Sichtbarkeit
-+equals(in obj: Object): Boolean</panel_attributes>
++setOberklasse(in oberklasse: Klasse) {IllegalArgumentException}
++getOberklasse(): Klasse
++equals(in obj: Object): Boolean
+_-checkOberklasse(in oberklasse: Klasse): Boolean_
+_-checkSichtbarkeit(in sichtbarkeit: Sichtbarkeit): Boolean_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -24,12 +28,12 @@
       <x>480</x>
       <y>110</y>
       <w>340</w>
-      <h>120</h>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=[0..1]
 {azyklisch}</panel_attributes>
-    <additional_attributes>150.0;10.0;260.0;10.0;260.0;100.0;10.0;100.0;10.0;70.0</additional_attributes>
+    <additional_attributes>150.0;10.0;260.0;10.0;260.0;160.0;10.0;160.0;10.0;130.0</additional_attributes>
   </element>
   <element>
     <id>Text</id>
@@ -46,7 +50,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>850</x>
+      <x>780</x>
       <y>80</y>
       <w>110</w>
       <h>50</h>
