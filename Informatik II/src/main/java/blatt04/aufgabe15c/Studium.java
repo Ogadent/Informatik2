@@ -4,5 +4,5 @@ public class Studium {
 
 	private Date immatrikulation;
 	private Date exmatrikulation;
-	
+	private Studiengang studiengang;
 }
