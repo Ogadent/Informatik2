@@ -13,6 +13,9 @@ public class Student {
 	}
 	
 	public void linkStudiengang(Studiengang s) {
+		if (!s.isWiederholungsfrei()) {
+			throw new IllegalArgumentException("s ist nicht wiederholungsfrei");
+		}
 		studiengang.add(s);
 	}
 }
