@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="blatt05.Aufgabe19cController">
+   <center>
+      <Text fx:id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Aktiviert" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
