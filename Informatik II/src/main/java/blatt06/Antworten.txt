@@ -1,19 +1,16 @@
-Aufgabe 21
+Aufgabe 21:
 a)
-CREATE TABLE Buch
-(
+CREATE TABLE Buch(
 isbn CHAR(13) NOT NULL,
 PRIMARY KEY (isnb)
 );
 
-CREATE TABLE Kunde
-(
+CREATE TABLE Kunde(
 kundennummer INTEGER NOT NULL,
 PRIMARY KEY (kundennummer)
 );
 
-CREATE TABLE KundeBuecher
-(
+CREATE TABLE KundeBuecher(
 kundennummer INTEGER NOT NULL,
 isbn CHAR(13) NOT NULL,
 PRIMARY KEY (kundennummer, isbn)
