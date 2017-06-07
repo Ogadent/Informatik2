@@ -1,0 +1,110 @@
+Aufgabe 21
+a)
+CREATE TABLE Buch
+(
+isbn CHAR(13) NOT NULL,
+PRIMARY KEY (isnb)
+);
+
+CREATE TABLE Kunde
+(
+kundennummer INTEGER NOT NULL,
+PRIMARY KEY (kundennummer)
+);
+
+CREATE TABLE KundeBuecher
+(
+kundennummer INTEGER NOT NULL,
+isbn CHAR(13) NOT NULL,
+PRIMARY KEY (kundennummer, isbn)
+);
+
+
+b)
+CREATE TABLE Mitarbeiter(
+nummer CHAR(7) NOT NULL,
+PRIMARY KEY (nummer)
+);
+
+CREATE TABLE Fremdsprache(
+name VARCHAR(19) NOT NULL,
+PRIMARY KEY (name)
+);
+
+CREATE TABLE MitarbeiterFremdsprache(
+mitarbeiter CHAR(7) NOT NULL,
+fremdsprache VARCHAR(19) NOT NULL,
+PRIMARY KEY (mitarbeiter, fremdsprache)
+);
+
+
+c)
+CREATE TABLE Point
+(
+pointId INTEGER NOT NULL,
+x INT NOT NULL,
+y INT NOT NULL,
+CHECK (x >= 0),
+CHECK (y >= 0),
+PRIMARY KEY (pointId)
+);
+
+CREATE TABLE Circle(
+(
+circleId INTEGER NOT NULL,
+radius INTEGER NOT NULL,
+pointId INTEGER NOT NULL,
+CHECK (radius >= 0),
+PRIMARY KEY (circleId)
+);
+
+d)
+CREATE TABLE AbstractFile(
+fileId INTEGER NOT NULL,
+name VARCHAR(45) NOT NULL,
+size INTEGER NOT NULL,
+type INTEGER NOT NULL,
+PRIMARY KEY (fileId)
+)
+
+CREATE TABLE Directory(
+directoryId INTEGER NOT NULL,
+fileId INTEGER NOT NULL,
+PRIMARY KEY (directoryId, fileId)
+)
+
+
+e)
+CREATE TABLE Wunschliste(
+wunschlisteId INTEGER NOT NULL,
+PRIMARY KEY (wunschlisteId)
+)
+
+CREATE TABLE Artikel(
+artikelId INTEGER NOT NULL,
+preis REAL NOT NULL,
+PRIMARY KEY (artikelId)
+)
+
+CREATE TABLE ArtikelWunschliste(
+wunschlisteId INTEGER NOT NULL,
+artikelId INTEGER NOT NULL,
+PRIMARY KEY (wunschlisteId, artikelId)
+)
+
+
+Aufgabe 22:
+a)
+INSERT INTO Kontakt VALUES (12, 'Lorenz');
+INSERT INTO KontaktTelefon VALUES (12, '2457');
+
+SELECT * FROM KontaktTelefon WHERE kontaktId = 5;
+
+b)
+SELECT Artikel.name FROM Artikel, ArtikelWarengruppe, Warengruppe WHERE ArtikelWarengruppe.artikelId = Artikel.id AND ArtikelWarengruppe.warengruppeId = Warengruppe.id AND Warengruppe.name = 'Getraenke';
+
+
+c)
+DELETE FROM Vorlesung WHERE id = 21 AND jahr = '2017';
+UPDATE Vorlesung SET name = 'Informatik 2' WHERE name = 'Informatik II';
+
