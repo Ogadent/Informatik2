@@ -1,0 +1,14 @@
+Aufgabe 22:
+a)
+INSERT INTO Kontakt VALUES (12, 'Lorenz');
+INSERT INTO KontaktTelefon VALUES (12, '2457');
+
+SELECT * FROM KontaktTelefon WHERE kontaktId = 5;
+
+b)
+SELECT Artikel.name FROM Artikel, ArtikelWarengruppe, Warengruppe WHERE ArtikelWarengruppe.artikelId = Artikel.id AND ArtikelWarengruppe.warengruppeId = Warengruppe.id AND Warengruppe.name = 'Getraenke';
+
+
+c)
+DELETE FROM Vorlesung WHERE id = 21 AND jahr = '2017';
+UPDATE Vorlesung SET name = 'Informatik 2' WHERE name = 'Informatik II';
