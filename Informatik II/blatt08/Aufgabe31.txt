@@ -1,0 +1,17 @@
+a)
+Das Attribut nummer erfüllt folgende Datenstrukturinvarianten: Die Nummer muss größer als 1000 Zeichen sein
+
+b)
+Wenn ihre Nummer gleich ist
+
+c)
+Alle Objekte die in dem AngestellenContainer vorhanden sind
+
+d)
+Es zeigt einen nicht-modalen Dialog mit dem Titel: "Alle Angestellten anzeigen". Am oberen Rand befindet sich ein Label mit der Aufschrift: "Alle Angestellten". In der Mitte des Dialogs befindet sich eine Liste auf der die Angestellten angezeigt werden. Am unteren Rand befindet sich ein Panel auf dem zwei Buttons sind. Der erste trägt die Aufschrift: "Angestellten löschen" und der zweite "Abbrechen". 
+
+e)
+Es sucht in dem AngestelltenContainer nach dem als Argument übergebenen Angestellten und gibt ihn zurück falls er existiert, ansonsten null
+
+f)
+Die Methode überprüft zunächst ob der Angestellte vorhanden ist, ansonsten wird eine IlegalArgumentException geworfen. Danach wird der Angestellte von allen Angestellten als Vorgesetzter entfernt. Anschließend wird der Angestellte von allen Angestellten entfernt, die Methoden setChanged und notifyObservers aufgerufen und die Anzahl an Angestellten decrementiert.
