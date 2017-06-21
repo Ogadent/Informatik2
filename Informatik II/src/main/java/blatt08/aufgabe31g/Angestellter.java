@@ -47,6 +47,8 @@ public class Angestellter extends Observable {
 	public void setName(String name) throws IllegalInputException {
 		if (name.length() >= 2 && Character.isUpperCase(name.charAt(0))) {
 			this.name = name;
+			setChanged();
+			notifyObservers();
 		}
 		else
 			throw new IllegalInputException("Name muss mindestens 2 "
@@ -59,6 +61,8 @@ public class Angestellter extends Observable {
 			Date anfang = DateFormat.getDateInstance().parse("1.1.1900");
 			if (beginn.after(anfang)) {
 				this.beginn = beginn;
+				setChanged();
+				notifyObservers();
 			}
 			else
 				throw new IllegalInputException("Das Datum darf nicht in vor dem 1.1.1900 liegen",beginn.toString());
@@ -83,11 +87,15 @@ public class Angestellter extends Observable {
 			return;
 		if (!this.checkVorgesetzterZyklus(vorgesetzter)) 
 			throw new IllegalInputException("Zyklische Vorgesetzten-Beziehung",vorgesetzter.toString());
-		this.vorgesetzter = vorgesetzter; 
+		this.vorgesetzter = vorgesetzter;
+		setChanged();
+		notifyObservers();
 	}
 
 	public void unlinkVorgesetzter() {
 		this.vorgesetzter = null;
+		setChanged();
+		notifyObservers();
 	}
 
 	public Angestellter getlinkVorgesetzter() {
