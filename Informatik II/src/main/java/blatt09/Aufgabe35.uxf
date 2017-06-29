@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>170</y>
+      <w>440</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>+ Datenbank
+--
+_-unique: Datenbank = null_
+--
+- Datenbank()
+_+ instance(): Datenbank {ClassNotFoundException, SQLException}_
++ load(out con: ArtikelContainer) {SQLException}
++ save(in con: ArtikelContainer) {SQLException}
++ add(in d: Artikel) {SQLException}
++ delete(in d: Artikel) {SQLException}
++ modify(in d: Artikel) {SQLException}
++ close()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>170</y>
+      <w>100</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
++ Connection</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>140</x>
+      <y>180</y>
+      <w>200</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- con
+[0..1]</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>410</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>+ ArtikelContainer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>410</y>
+      <w>100</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>+ Artikel
+--
+-name: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>170</x>
+      <y>400</y>
+      <w>220</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-&gt;
+
+- alleArtikel [0..*]</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>270</y>
+      <w>240</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- store
+[0..1]</panel_attributes>
+    <additional_attributes>220.0;20.0;10.0;20.0;10.0;140.0</additional_attributes>
+  </element>
+</diagram>
