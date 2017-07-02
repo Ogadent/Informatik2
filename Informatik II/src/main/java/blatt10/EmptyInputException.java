@@ -12,6 +12,7 @@ public class EmptyInputException extends Exception {
 	private final TextField source;
 
 	public EmptyInputException(final TextField source) {
+		super("Leere Eingabe");
 		this.source = source;
 	}
 	
