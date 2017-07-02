@@ -1,0 +1,14 @@
+a)
+	Um anzuzeigen, ob die neusten Änderungen bereits gespeichert wurden
+	
+b)
+	Um auf Veränderungen des Containers reagieren zu können
+	
+c)
+	Nein
+	
+d)
+	Es löscht alle Angestellten von dem Container
+	
+e)
+	Die Klasse AngestelltenverwaltungGUI muss eine Textdatei enthalten und der Container soll seine Daten in diese schreiben sobald etwas verändert wurde
