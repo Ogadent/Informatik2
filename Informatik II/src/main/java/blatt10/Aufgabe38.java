@@ -2,7 +2,7 @@ public void load(BuchContainer container) {
 	try (PreparedStatement stmt = con.prepareStatement("SELECT * FROM Buch")) {
 		final ResultSet result = stmt.executeQuery();
 		while (result.next()) {
-			final Buch buch = new Buch(result.getString(1), result.getString(2));
+			final Buch buch = new Buch(result.getString("isbn"), result.getString("title"));
 			container.linkBuchFrom(buch);
 		}
 	} catch (SQLException e) {
