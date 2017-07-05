@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="URF-8">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <xsd:element name="Buch">
+                <xsd:complexType>
+                        <xsd:attribute name="isbn" type="String">
+                        <xsd:sequence>
+                                <xsd:element name="kunde" type="Kunde" maxOccurs="1"/>
+                        </xsd:sequence>
+                </xsd:complexType>
+        </xsd:element>
+        
+        <xsd:element name="Kunde">
+                <xsd:complexType>
+                        <xsd:attribute name="kundennummer" type="Integer">
+                        <xsd:sequence>
+                                <xsd:element name="buecher" type="Buch" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                </xsd:complexType>
+        </xsd:element>
+</xsd:schema>
