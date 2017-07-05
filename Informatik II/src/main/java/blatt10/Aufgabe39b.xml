@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="URF-8">
 <VorlesungsVerwaltung>
-        <VTyp VID="V001">
-                <STyp Name="Informatik 1" Matnr="001"/>
-                <STyp Name="Informatik 2" Matnr="002"/>
-        </VTyp>
-        <VTyp VID="V002">
-                <STyp Name="Informatik 2" Matnr="001"/>
-        </VTyp>
+        <Vorlesung VID="V001">
+                <Name="Informatik 1"/>
+                <Teilnehmer Matnr="001"/>
+                <Teilnehmer Matnr="002"/>
+        </Vorlesung>
+        <Vorlesung VID="V002">
+                <Name="Informatik 2"/>
+                <Teilnehmer Matnr="001"/>
+        </Vorlesung>
 </VorlesungsVerwaltung>
