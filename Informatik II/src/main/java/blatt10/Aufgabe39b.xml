@@ -2,9 +2,9 @@
 <VorlesungsVerwaltung>
         <VTyp VID="V001">
                 <STyp Name="Informatik 1" Matnr="001"/>
+                <STyp Name="Informatik 2" Matnr="002"/>
         </VTyp>
         <VTyp VID="V002">
                 <STyp Name="Informatik 2" Matnr="001"/>
-                <STyp Name="Informatik 2" Matnr="002"/>
         </VTyp>
 </VorlesungsVerwaltung>
