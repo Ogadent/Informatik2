@@ -37,7 +37,7 @@ public class Article {
 	
 	public void setName(String name) throws IllegalArgumentException {
 		if (!checkName(name))
-			throw new IllegalArgumentException("Name ung�ltig");
+			throw new IllegalArgumentException("Name ungültig");
 		this.name = name;
 	}
 
@@ -47,7 +47,7 @@ public class Article {
 	
 	public void setPrice(double price) throws IllegalArgumentException {
 		if (!checkPrice(price))
-			throw new IllegalArgumentException("Preis ung�ltig");
+			throw new IllegalArgumentException("Preis ungültig");
 		this.price = price;
 	}
 
@@ -57,7 +57,7 @@ public class Article {
 	
 	public void setDiscount(double discount) throws IllegalArgumentException {
 		if (!checkDiscount(discount))
-			throw new IllegalArgumentException("Rabatt ungültig");
+			throw new IllegalArgumentException("Rabatt ungÃ¼ltig");
 		this.discount = discount;
 	}
 }
